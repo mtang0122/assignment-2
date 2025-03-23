@@ -5,6 +5,18 @@ let colorSelected;
 
 // Add a row
 function addR() {
+	const grid = document.getElementById("grid");
+    const newRow = document.createElement("tr");
+
+    // Add cells to the new row
+    for (let i = 0; i < numCols; i++) {
+        const newCell = document.createElement("td");
+        newCell.onclick = function() { this.style.backgroundColor = colorSelected; };
+        newRow.appendChild(newCell);
+    }
+
+    grid.appendChild(newRow);
+    numRows++;
 }
 
 // Add a column
