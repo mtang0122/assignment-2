@@ -5,10 +5,6 @@ This repository is the starter code for Assignment 2 - Grid Maker.
 [Website link](https://johnnylaicode.github.io/grid-maker-starter-code/)
 
 ----------
-### 2. Use the information below to ***clone*** the starter codebase to your local machine
-After creating the starter codebase "assignment-2" repository on GitHub (see above), you can clone it to your local machine. The instructions on how to clone a GitHub repository are available at this [link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
-
-----------
 ### 3. Set up and deploy the application to GitHub Pages
 After your application development, you can deploy the application to GitHub Pages using the process below.
 
