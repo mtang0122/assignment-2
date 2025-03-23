@@ -21,6 +21,23 @@ function addR() {
 
 // Add a column
 function addC() {
+	const grid = document.getElementById("grid");
+    const rows = grid.getElementsByTagName("tr");
+
+    // If no rows exist, create a new row first
+    if (rows.length === 0) {
+        addR();
+        return;
+    }
+
+    // Add a cell to each row
+    for (let i = 0; i < rows.length; i++) {
+        const newCell = document.createElement("td");
+        newCell.onclick = function() { this.style.backgroundColor = colorSelected; };
+        rows[i].appendChild(newCell);
+    }
+
+    numCols++;
 }
 
 // Remove a row
