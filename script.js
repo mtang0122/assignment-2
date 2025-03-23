@@ -103,4 +103,8 @@ function fillAll(){
 
 // Clear all cells
 function clearAll(){
+	const cells = document.querySelectorAll("#grid td");
+    cells.forEach(cell => {
+        cell.style.backgroundColor = "";
+    });
 }
