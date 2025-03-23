@@ -85,6 +85,12 @@ function selectColor(){
 
 // Fill all uncolored cells
 function fillU(){
+	const cells = document.querySelectorAll("#grid td");
+    cells.forEach(cell => {
+        if (!cell.style.backgroundColor) {
+            cell.style.backgroundColor = colorSelected;
+        }
+    });
 }
 
 // Fill all cells
