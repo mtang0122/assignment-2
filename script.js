@@ -95,6 +95,10 @@ function fillU(){
 
 // Fill all cells
 function fillAll(){
+	const cells = document.querySelectorAll("#grid td");
+    cells.forEach(cell => {
+        cell.style.backgroundColor = colorSelected;
+    });
 }
 
 // Clear all cells
