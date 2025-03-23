@@ -7,11 +7,6 @@ let colorSelected;
 function addR() {
 	const grid = document.getElementById("grid");
     const newRow = document.createElement("tr");
-	
-	// If no columns exist, add one column first
-    if (numCols === 0) {
-        addC(); // This will add a column and handle the logic
-    }
 
     // Add cells to the new row
     for (let i = 0; i < numCols; i++) {
