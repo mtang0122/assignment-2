@@ -58,6 +58,23 @@ function removeR() {
 
 // Remove a column
 function removeC() {
+	const grid = document.getElementById("grid");
+    const rows = grid.getElementsByTagName("tr");
+
+    if (numCols > 0) {
+        for (let i = 0; i < rows.length; i++) {
+            rows[i].removeChild(rows[i].lastElementChild);
+        }
+        numCols--;
+    }
+
+    // If no columns are left, reset rows to 0
+    if (numCols === 0) {
+        while (rows.length > 0) {
+            grid.removeChild(rows[0]);
+        }
+        numRows = 0;
+    }
 }
 
 // Set global variable for selected color
