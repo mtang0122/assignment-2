@@ -42,6 +42,18 @@ function addC() {
 
 // Remove a row
 function removeR() {
+	const grid = document.getElementById("grid");
+    const rows = grid.getElementsByTagName("tr");
+
+    if (rows.length > 0) {
+        grid.removeChild(rows[rows.length - 1]);
+        numRows--;
+    }
+
+    // If no rows are left, reset columns to 0
+    if (numRows === 0) {
+        numCols = 0;
+    }
 }
 
 // Remove a column
