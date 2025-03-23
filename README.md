@@ -2,7 +2,7 @@
 This repository is the starter code for Assignment 2 - Grid Maker.
 
 ### Live Link
-[Website link](https://johnnylaicode.github.io/grid-maker-starter-code/)
+[Website link](https://mtang0122.github.io/assignment-2/)
 
 ----------
 ### 3. Set up and deploy the application to GitHub Pages
